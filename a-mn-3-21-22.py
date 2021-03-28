@@ -252,9 +252,22 @@ def emptyNet():
     info(os.system('ip addr add 100.0.0.99/24 dev s999'))
     info(os.system('ip link set s999 up'))
 
-    #time.sleep(5)
+    time.sleep(2)
 
-    #info( net[ 's06db' ].cmd( 'python3 ascdb.py &amp' ) )
+    info( net[ 's03m1' ].cmd( 'python3.6 as03m1.py &amp' ) )
+    info( net[ 's03m2' ].cmd( 'python3.6 as03m2.py &amp' ) )
+    info( net[ 's03m3' ].cmd( 'python3.6 as03m3.py &amp' ) )
+    info( net[ 's03m4' ].cmd( 'python3.6 as03m4.py &amp' ) )
+    info( net[ 's03m5' ].cmd( 'python3.6 as03m5.py &amp' ) )
+    info( net[ 's03m6' ].cmd( 'python3.6 as03m6.py &amp' ) )
+
+    info( net[ 's21m1' ].cmd( 'python3.6 as21m1.py &amp' ) )
+    info( net[ 's21m2' ].cmd( 'python3.6 as21m2.py &amp' ) )
+    info( net[ 's21m3' ].cmd( 'python3.6 as21m3.py &amp' ) )
+
+    info( net[ 's22m1' ].cmd( 'python3.6 as22m1.py &amp' ) )
+    info( net[ 's22m2' ].cmd( 'python3.6 as22m2.py &amp' ) )
+    info( net[ 's22m3' ].cmd( 'python3.6 as22m3.py &amp' ) )
 
 
     CLI( net )
