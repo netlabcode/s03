@@ -269,6 +269,18 @@ def emptyNet():
     info( net[ 's22m2' ].cmd( 'python3.6 as22m2.py &amp' ) )
     info( net[ 's22m3' ].cmd( 'python3.6 as22m3.py &amp' ) )
 
+    time.sleep(2)
+
+    info( net[ 's03gw' ].cmd( 'python3.6 as03gdb.py &amp' ) )
+    info( net[ 's21gw' ].cmd( 'python3.6 as21gdb.py &amp' ) )
+    info( net[ 's22gw' ].cmd( 'python3.6 as22gdb.py &amp' ) )
+
+    time.sleep(2)
+
+    info( net[ 's03gw' ].cmd( 'python3.6 as03gcc.py &amp' ) )
+    info( net[ 's21gw' ].cmd( 'python3.6 as21gcc.py &amp' ) )
+    info( net[ 's22gw' ].cmd( 'python3.6 as22gcc.py &amp' ) )
+
 
     CLI( net )
     net.stop()
